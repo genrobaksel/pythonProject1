@@ -1,7 +1,7 @@
 def a (n):
     while n>0:
         print(n, end='  ')
-        n-=1
+        n-=2
 c = a(5)
 print(c)
 
