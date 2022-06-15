@@ -61,26 +61,28 @@ def fiveangle(angle, length):
     v5.draw(color='red')
 
 point = sd.get_point(350, 100)
-# def lines( length, point,angle):
-#     v1 = sd.get_vector(start_point=point, angle=angle, length=length, width=3)
-#     v1.draw(color='red')
-#     return v1.end_point
-#
-# def n_fig_angls(z):
-#     n_angls=360/z
-#
-#     length=100
-#     angle_0=0
-#     next_length = length
-#     next_angle=angle_0
-#     a = point
-#     for i in range(z):
-#         a=lines(length=next_length,point=a,angle=next_angle )
-#         next_angle+=n_angls
-#n_fig_angls(7)
-    # a1=lines(length=next_length,point=a,angle=angle_0)
-    # angle_0+=n_angls
-    # a2=lines(length=next_length,point=a1,angle=angle_0 )
+
+def lines( length, point,angle):
+    v1 = sd.get_vector(start_point=point, angle=angle, length=length, width=3)
+    v1.draw(color='red')
+    return v1.end_point
+
+def n_fig_angls(z):
+    n_angls=360/z
+
+    length=100
+    angle_0=0
+    next_length = length
+    next_angle=angle_0
+    a = point
+    for i in range(z):
+        a=lines(length=next_length,point=a,angle=next_angle )
+        next_angle+=n_angls
+
+n_fig_angls(7)
+#     a1=lines(length=next_length,point=a,angle=angle_0)
+#      angle_0+=n_angls
+#      a2=lines(length=next_length,point=a1,angle=angle_0 )
 
 def lines( length,  z):
      a = sd.get_point(350, 100)
