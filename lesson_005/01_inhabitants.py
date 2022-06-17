@@ -7,7 +7,7 @@ from lesson_005.district.soviet_street.house1 import  room2 as r12
 from lesson_005.district.soviet_street.house2 import  room1 as r21
 from lesson_005.district.soviet_street.house2 import  room2 as r22
 def room(args, x):
-    print('in room number ', x)
+    print('in room number ',  x)
     for i,j in enumerate(args):
         print(i,j)
     print()
