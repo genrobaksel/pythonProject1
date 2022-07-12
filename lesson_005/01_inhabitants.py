@@ -11,7 +11,11 @@ def room(args, x):
     for i,j in enumerate(args):
         print(i,j)
     print()
+for i in r21.folks:
+    r11.folks.append(i)
+for i in r22.folks:
+    r12.folks.append(i)
 room(r11.folks, 'r11')
 room(r12.folks, 'r12')
-room(r21.folks, 'r21')
-room(r22.folks, 'r22')
+# room(r21.folks, 'r21')
+# room(r22.folks, 'r22')
